@@ -1,0 +1,800 @@
+
+  body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-color: #681200!important;
+  }
+  
+  a {
+    color: rgb(56, 55, 55) !important;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    display:inline-block;
+    margin-top: 36px!important;
+    margin-bottom: 29px !important;
+    color: #d84104;
+  }
+  
+  .bg-gradient-primary {
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(195deg, #ffd700 0%, #f40f0a 100%);
+}
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  .wrapperr{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* min-height: 100%; */
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 7px 9px 6px 0 rgb(0 0 0 / 30%);
+    text-align: center;
+  }
+  #formConten {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 650px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 7px 9px 6px 0 rgb(0 0 0 / 30%);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  .menu{
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;  
+    box-shadow: 0px 0px 20px 3px #5e404094;
+  }
+  .menu a:link{
+    text-decoration: none;
+  }
+  .menu:hover{
+    text-decoration: none;
+    font-weight: 600;
+    transition: 5s;
+  }
+  
+  
+  .cartao{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #000;
+  }
+  .cartao_verso{
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #000;
+  }
+  .barra{
+    background-color: white;
+    width: 100% !important;
+    height: 60px;
+    width: 77px;
+    position: absolute;
+    top: 34px;
+    left: 0;
+  }
+  .valid{
+    position: absolute;
+    color: white;
+    top: 235px;
+    font-size: 16px;
+    margin-left: 390px;
+    border: none;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .data{
+    position: absolute;
+    color: white;
+    top: 255px;
+    font-size: 16px;
+    margin-left: 390px;
+    border: none;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .cvc{
+    position: absolute;
+    bottom: 35px;
+    font-weight: 700;
+    color: white;
+    font-size: 23px;
+    right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: #d84104;
+  }
+  .num{
+    position: absolute;
+    top: 160px;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+  }
+  .chip{
+    width: 77px;
+    position: absolute;
+    top: 75px;
+    left: 13px;
+    border-radius: 30px;
+  }
+  .bandeira{
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    width: 100px;
+    height: 58px;
+    padding: 0.5%;
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+  }
+  .tipo{
+    position: absolute;
+    right: 50px;
+    top: 82px;
+    color: white;
+  }
+  .titular{
+    width: 160px;
+    position: absolute;
+    top: 235px;
+    left: 2px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .nome_titular{
+    position: absolute;
+    top: 255px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;;
+    border-radius: 4px;
+    left:30px;
+  }
+  hr{
+    border: 1px dotted white !important;
+    width: 95% !important;
+  }
+
+
+  .cartao_cad{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #000;
+  }
+  .num_cad{
+    position: absolute;
+    margin-top: 150px;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    margin-left: 30px;
+  }
+  .chip_cad{
+    width: 77px;
+    position: absolute;
+    margin-top: 70px;
+    border-radius: 30px;
+    margin-left: 40px;
+  }
+  #bandeira{
+    position: absolute;
+    /* right: 12px; */
+    padding: 0.5%;
+    /* top: 17px; */
+    width: 124px;
+    border-radius: 9px;
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+  .data_cad{
+    position: absolute;
+    color: white;
+    top: 362px;
+    font-size: 14px;
+    margin-left: 380px;
+    border: none;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .cvc_cad{
+    position: absolute;
+    margin-top: 200px;
+    font-weight: 700;
+    color: white;
+    font-size: 23px;
+    margin-left: 338px;
+    padding-right: 20px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: #d84104;
+  }
+  .cvc_cad input{
+    width: 60px;
+    color: white;
+    border: none;
+    background: transparent;
+  }
+
+  .barra_cad{
+    background-color: white;
+    /* width: 100% !important; */
+    height: 57px;
+    width: 449px;
+    position: absolute;
+    margin-top: 34px;
+    /* left: 0;*/
+    
+  }
+  .valid_cad{
+    position: absolute;
+    color: white;
+    top: 345px;
+    font-size: 14px;
+    margin-left: 380px;
+    border: none;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .tipo_cad{
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 9px;
+    margin-top: 90px;
+    margin-left: 260px;
+  }
+  .titular_cad{
+    position: absolute;
+    color: white;
+    top: 362px;
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  .nome_cad{
+    min-width: 250px;
+    max-width: auto;
+    position: absolute;
+    color: white;
+    top: 380px;
+    background: transparent;
+    border-radius: 4px;
+    margin-left: 36px;
+    border: none;
+  }
+
+  .visa{
+    background: white;
+    animation-delay: 0.2s;
+    background-image: url(../img/visa.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 58px;
+  }
+  .master{
+    
+    background: white;
+    animation-delay: 0.2s;
+    background-image: url(../img/mastercard.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 58px;
+  }
+  .elo{
+    
+    background: rgb(27, 26, 26);
+    animation-delay: 0.2s;
+    background-image: url(../img/elo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 58px;
+  }
+  .hiper{
+    
+    background: white;
+    animation-delay: 0.2s;
+    background-image: url(../img/hipercard.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 58px;
+  }
+  .american{
+    
+    background: #0073a5;
+    animation-delay: 0.2s;
+    background-image: url(../img/americanexpress.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 58px;
+  }
+
+  .fundo{
+    background-color: #3b3232c7 !important;
+    border-radius: 17px;
+  }
+
+  .perfil {
+    margin: 20px 0;
+  }
+  
+  /* perfil sidebar */
+  .perfil-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+    min-height: 460px;
+    border-radius: 20px;
+  }
+  
+  .perfil-userpic img {
+    float: none;
+    margin: 0 auto;
+    background-position: -15px -15px;
+    height: 195px;
+    width: 195px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+  }
+  
+  .perfil-usertitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .perfil-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  
+  .perfil-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .perfil-userbuttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .perfil-userbuttons .btn {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 15px;
+    margin-right: 5px;
+  }
+  
+  .perfil-userbuttons .btn:last-child {
+    margin-right: 0px;
+  }
+      
+  .perfil-usermenu {
+    margin-top: 30px;
+  }
+  
+  .perfil-usermenu ul li {
+    border-bottom: 1px solid #f0f4f7;
+  }
+  
+  .perfil-usermenu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .perfil-usermenu ul li a {
+    color: #93a3b5;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .perfil-usermenu ul li a i {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .perfil-usermenu ul li a:hover {
+    background-color: #fafcfd;
+    color: #5b9bd1;
+  }
+  
+  .perfil-usermenu ul li.active {
+    border-bottom: none;
+  }
+  
+  .perfil-usermenu ul li.active a {
+    color: #5b9bd1;
+    background-color: #f6f9fb;
+    border-left: 2px solid #5b9bd1;
+    margin-left: -2px;
+  }
+
+  .perfil-content {
+    padding: 20px;
+    background: #fff;
+    min-height: 460px;
+    border-radius: 20px;
+  }
+  .nav_font{
+    font-size: 25px;
+  }
+
+
+  h2.inactive {
+    color: #ff5500;
+  }
+  
+  h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+  }
+
+  #picture__input {
+    display: none;
+  }
+  
+  .picture {
+    height: 195px;
+    width: 195px;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .picture:hover {
+    color: #777;
+    background: #ccc;
+  }
+  
+  .picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+  }
+  
+  .picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .picture__img {
+    max-width: 100%;
+  }
+  
+  
+
+  
+  input[type=button], input[type=submit], input[type=reset]  {
+    background-color: #d84104;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #f0571b;
+  }
+  
+  input[type=button]:active, input[type=submit]:active, input[type=reset]:active{
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  input[type=text],input[type=password] {
+    background-color: #f6f6f6 !important;
+    border: none !important;
+    color: #0d0d0d;
+    padding: 15px 32px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  select {
+    background-color: #f6f6f6 !important;
+    border: none !important;
+    color: #0d0d0d !important;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+ 
+  .dataTables_wrapper .dataTables_filter input {
+    background-color: #f6f6f6 !important;
+    border: none !important;
+    color: #0d0d0d !important;
+  }
+  .dataTables_wrapper .dataTables_filter input:focus {
+    background-color: #fff !important;
+    border-bottom: 2px solid #d84104 !important;
+  }
+  table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td{
+    text-align: center !important;
+  
+  }
+  input:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #d84104;
+  }
+  select:focus {
+    background-color: #fff !important;
+    border-bottom: 2px solid #d84104 !important;
+  }
+  
+  input[type=text]:placeholder {
+    color: #cccccc;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .cartao{
+      width: 100px;
+      height: 240px;
+      border-radius: 20px;
+      background-color: #000;
+    }
+    .num{
+      top: 157px;
+      font-size: 24px;
+      left: 24px;
+    }
+    .chip{
+      width: 68px;
+      top: 59px;
+    }
+    .bandeira{
+      position: absolute;
+      right: 12px;
+      top: 17px;
+      width: 110px;
+    }
+    .titular{
+      width: 160px;
+      position: absolute;
+      top: 200px;
+      left: 28px;
+      border-radius: 4px;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+
+
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #d84104;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
+  
+
+  
+  *:focus {
+      outline: none;
+  } 
+  
+  #icon {
+    width:60%;
+  }
+  
